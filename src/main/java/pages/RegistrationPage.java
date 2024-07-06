@@ -58,6 +58,17 @@ public class RegistrationPage extends PageBase{
         driver.findElement(registerButton).click();
     }
 
+    public void enterUserDataFaker(String firstName, String lastName, String email, String password, String confirmPassword){
+        driver.findElement(gender).click();
+        driver.findElement(first_Name).sendKeys(firstName);
+        driver.findElement(last_Name).sendKeys(lastName);
+        driver.findElement(eMail).sendKeys(email);
+        driver.findElement(newsLetterButton).click();
+        driver.findElement(pass_Word).sendKeys(password);
+        driver.findElement(confirm_Password).sendKeys(confirmPassword);
+        driver.findElement(registerButton).click();
+    }
+
     public String registrationCompleteAssertion(){
         return driver.findElement(registrationCompleteMessage).getText();
     }
