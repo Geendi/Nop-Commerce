@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="nopCommerce Regression Suite" parallel="tests" thread-count="2">
+    <test name="Chrome Test" preserve-order="true">
+        <parameter name="browser" value="chrome">Chrome</parameter>
+        <classes>
+            <class name="tests.RegistrationGridParallelTesting"/>
+        </classes>
+    </test>
+
+    <test name="Firefox Test" preserve-order="true">
+        <parameter name="browser" value="firefox">Firefox</parameter>
+        <classes>
+            <class name="tests.RegistrationGridParallelTesting"/>
+        </classes>
+    </test>
+</suite>
