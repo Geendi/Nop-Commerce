@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="nopCommerce Regression Suite">
+    <parameter name="browser" value="chrome">Chrome</parameter>
+    <test name="Regression Test" preserve-order="true">
+        <classes>
+            <class name="tests.ContactUsTest"/>
+            <class name="tests.SearchTest"/>
+            <class name="tests.HoverMenuTest"/>
+            <class name="tests.CompareTest"/>
+        </classes>
+    </test>
+</suite>
