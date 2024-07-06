@@ -48,9 +48,5 @@ To set up the Nop Commerce application locally, follow these steps:
    - Check test reports in target directory.
 8. **Customize as Needed**.
 
-* Update configuration files with necessary settings.
-5. Run the application:
-*   npm start
-
 ## Usage
 * User Guide: Refer to the User Guide for detailed information on how to use the Nop Commerce application.
